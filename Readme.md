@@ -21,7 +21,7 @@ $ chmod -R 777 logs/ dags/ plugins/
 $ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 ```
 
-Step 4: 使用docker compose設定並建置airflow webserver (port:8080)
+Step 4: 使用docker compose設定並建置airflow webserver
 
 ```sh
 $ docker-compose up airflow-init
