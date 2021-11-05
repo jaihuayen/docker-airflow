@@ -1,5 +1,5 @@
 Step 1: 下載需求檔案
-$ git clone http://scm.tutorabc.com/kevinyen/docker-airflow.git
+$ git clone https://github.com/jaihuayen/docker-airflow.git
 
 
 Step 2: 將Dockerfile建置成Image
