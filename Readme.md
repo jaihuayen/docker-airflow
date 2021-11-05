@@ -42,7 +42,7 @@ $ docker compose up airflow-init
  
 $ docker compose up -d --build
 ```
-(將docker-compose 改成docker compose) (目前在172.16.19.253上的Airflow即是用此版本上版)
+(將docker-compose 改成docker compose)
 
 需要下架Airflow時，執行
 
