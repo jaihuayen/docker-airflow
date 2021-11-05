@@ -3,7 +3,7 @@
     x-airflow-common:
       &airflow-common
       #build: .
-      image: airflow-dockerimage-adjusted
+      image: airflow-image-adjusted
       # 
       # group_add:
       #   - 0
