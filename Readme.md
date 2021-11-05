@@ -8,7 +8,7 @@ Step 2: 將Dockerfile建置成Image
 ```sh
 $ cd docker-airflow
  
-$ docker build -t airflow-dockerimage-adjusted .
+$ docker build -t airflow-image-adjusted .
 ```
 
 Step 3: 建立所需要的資料夾以及設定所需的環境變數
