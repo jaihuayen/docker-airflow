@@ -1,11 +1,11 @@
 Step 1: 下載需求檔案
 
-```
+```sh
 $ git clone https://github.com/jaihuayen/docker-airflow.git
 ```
 Step 2: 將Dockerfile建置成Image
 
-```
+```sh
 $ cd docker-airflow
  
 $ docker build -t airflow-dockerimage-adjusted .
