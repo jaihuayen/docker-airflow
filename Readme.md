@@ -1,9 +1,9 @@
-Step 1: 下載需求檔案
+Step 1: Download Dockerfile and docker-compose file
 
 ```sh
 $ git clone https://github.com/jaihuayen/docker-airflow.git
 ```
-Step 2: 將Dockerfile建置成Image
+Step 2: Build the adjusted Docker Image of Airflow
 
 ```sh
 $ cd docker-airflow
@@ -11,7 +11,7 @@ $ cd docker-airflow
 $ docker build -t airflow-image-adjusted .
 ```
 
-Step 3: 建立所需要的資料夾以及設定所需的環境變數
+Step 3: Construct the files for Airflow and set the enviornment variables.
 
 ```sh
 $ mkdir ./logs ./plugins ./dags
