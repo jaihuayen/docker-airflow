@@ -21,7 +21,7 @@ $ chmod -R 777 logs/ dags/ plugins/
 $ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 ```
 
-Step 4: 使用docker compose設定並建置airflow webserver
+Step 4: Use docker compose to build airflow webserver
 
 ```sh
 $ docker-compose up airflow-init
@@ -29,22 +29,21 @@ $ docker-compose up airflow-init
 $ docker-compose up -d --build
 ```
 
-需要下架Airflow時，執行
+To stop and delete containers, delete volumes with database data and download images, run
 
 ```sh
 $ docker-compose down --volumes --rmi all
 ```
 
-**使用docker compose V2時，執行
+** Use docker compose V2 to build airflow webserver
 
 ```sh
 $ docker compose up airflow-init
  
 $ docker compose up -d --build
 ```
-(將docker-compose 改成docker compose)
 
-需要下架Airflow時，執行
+**To stop and delete containers, delete volumes with database data and download images in Docker Compose V2, run
 
 ```sh
 $ docker compose down --volumes --rmi all
