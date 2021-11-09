@@ -27,12 +27,12 @@
         - ./dags:/opt/airflow/dags
         - ./logs:/opt/airflow/logs
         - ./plugins:/opt/airflow/plugins
+        - ./config/airflow.cfg:/opt/airflow/airflow.cfg 
         # Pass the Docker Daemon as a volume to allow the webserver containers to start docker images
         # Windows requires a leading double slash (//) to address the Docker socket on the host
         - /var/run/docker.sock:/var/run/docker.sock
         - /etc/timezone:/etc/timezone:ro
-        - /etc/localtime:/etc/localtime:ro
-        - ./config/airflow.cfg:/usr/local/airflow/airflow.cfg        
+        - /etc/localtime:/etc/localtime:ro       
       #user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}" 
       #user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}" 
       depends_on:
