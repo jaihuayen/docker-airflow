@@ -3,12 +3,10 @@ Step 1: Download Dockerfile and docker-compose file
 ```sh
 $ git clone https://github.com/jaihuayen/docker-airflow.git
 ```
-Step 2: Build the adjusted Docker Image of Airflow
+Step 2: Switch to the project folder
 
 ```sh
 $ cd docker-airflow
- 
-$ docker build -t airflow-image-adjusted .
 ```
 
 Step 3: Construct the files for Airflow and set the enviornment variables.
