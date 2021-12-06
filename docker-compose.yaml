@@ -27,7 +27,11 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - ./config/airflow.cfg:/opt/airflow/airflow.cfg 
+    
+    # If need to use SMTP to send email, then create a folder config and put airflow.cfg inside.
+    # After that, uncomment the below command line.
+    #- ./config/airflow.cfg:/opt/airflow/airflow.cfg 
+    
     # Pass the Docker Daemon as a volume to allow the webserver containers to start docker images
     # Windows requires a leading double slash (//) to address the Docker socket on the host
     - /var/run/docker.sock:/var/run/docker.sock
